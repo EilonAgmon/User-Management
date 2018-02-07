@@ -1,0 +1,5 @@
+{{ template "header.html" .}}
+<div>
+  <!--Display the linked title of the edited user-->
+  <strong>The user <a href="/user/view/{{.payload.ID}}">{{.payload.FirstName}} {{.payload.LastName}}</a> was successfully updated.</strong>
+</div>

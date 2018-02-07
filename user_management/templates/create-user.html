@@ -1,0 +1,19 @@
+{{ template "header.html" .}}
+<h2>{{ .title }}</h2>
+<div class="panel panel-default col-sm-6">
+  <div class="panel-body">
+    <!--Create a form that POSTs to the `/user/create` route-->
+    <form class="form" action="/user/create" method="POST">
+      <div class="form-group">
+        <label for="firstname">First Name</label>
+        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name" required="required" maxlength="20">
+      </div>
+      <div class="form-group">
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Last Name" required="required" maxlength="20">
+      </div>
+      <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+  </div>
+</div>  
+ 

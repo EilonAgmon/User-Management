@@ -1,0 +1,10 @@
+{{ template "header.html" .}}
+  <!--Loop over the `payload` variable, which is the list of users-->
+  {{range .payload }}
+    <!--Create the link for the user based on its ID-->
+    <a href="/user/view/{{.ID}}">
+      <div style="border:1px solid black; background-color:#C0C0C0; height:50px; 
+	  line-height:50px; padding-left:10px; margin-bottom:15px; width:100%; 
+	  color:blue; font-size: 18px; margin-left:15px;">{{.FirstName}} {{.LastName}}</div>
+    </a>
+  {{end}}
