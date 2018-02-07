@@ -26,7 +26,7 @@ Trouble Shooting
 If the app doesn't start, try running the following commands from the applcation's root: ("./user_management")
 
 1. "go get github.com/gin-gonic/gin" (Gin Framework)
-2. "go get github.com/rs/xid" (Time library)
+2. "go get github.com/rs/xid" (ID generator library)
 3. "go run main.go routes.go models.user.go handlers.user.go" (Build the app)
 4. Navigate to http://localhost:8080/
 
